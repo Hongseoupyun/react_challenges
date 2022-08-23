@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from 'react';
+import JSONDATA from '../Data'
 
 function DynamicSearchFilter() {
   const [searchTerm, setSearchTerm] = useState("");

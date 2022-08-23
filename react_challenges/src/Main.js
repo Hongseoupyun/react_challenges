@@ -2,8 +2,8 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 
 import Home from './Components/Home';
-import IncrementDecrementButton from './Components/IncrementDecrementButton';
-import DynamicSearchFilter from './Components/DynamicSearchFilter';
+import IncrementDecrementButton from './Components/1.IncrementDecrementButton';
+import DynamicSearchFilter from './Components/2.DynamicSearchFilter';
 
 function Main() {
   return (
