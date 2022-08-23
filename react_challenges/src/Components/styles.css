@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  background: #dc5b39;
+  margin: 0 auto;
+  transform: translateY(300px);
+  transition: 0.3s cubic-bezier(0.56, 0.2, 0.46, 1.27) all;
+}

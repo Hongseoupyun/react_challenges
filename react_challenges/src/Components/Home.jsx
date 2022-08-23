@@ -3,16 +3,9 @@ import React from 'react'
 function Home() {
   return (
     <div>
-      <h1>HOME</h1>
-      <ul>
-        <li>
-        <a href='/increment_decrement'>IncrementDecrementButton</a>
-        </li>
-        <li>
-        <a href='/dynamicFilter'>DynamicSearchFilter</a>
-        </li>
-      </ul>
-     
+      <a href="/1"><div>Dynamic Search</div></a>
+      <a href="/2"><div>IncrementDecrement</div></a>
+      <a href="/3" ><div>Move up Box</div></a>
     </div>
   )
 }
