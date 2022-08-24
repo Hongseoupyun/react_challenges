@@ -3,7 +3,9 @@ import MoveupBox from './Components/MoveupBox'
 import DynamicSearchFilter from './Components/DynamicSearchFilter';
 import IncrementDecrementButton from './Components/IncrementDecrementButton';
 import Home from './Components/Home';
+import FetchData from './Components/FetchData'
 import { Route, Link, Router, Routes } from 'react-router-dom';
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <Route path="/1" element={<DynamicSearchFilter />}></Route>
       <Route path="/2" element={<IncrementDecrementButton />}></Route>
       <Route path="/3" element={<MoveupBox />}></Route>
+      <Route path="/4" element={<FetchData />}></Route>
     </Routes>
   );
 }

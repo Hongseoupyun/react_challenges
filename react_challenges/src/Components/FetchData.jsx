@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import ScotchInfoBar from "./ScotchInfoBar";
+
 import "./styles.css";
 
-function App() {
+export default function App() {
   const [books, setBooks] = useState(null);
   const apiURL = "https://www.anapioficeandfire.com/api/books?pageSize=30";
 
@@ -26,6 +25,8 @@ function App() {
         <br />
       </div>
 
+      {/* display datas */}
+
       <div className="books">
         {books &&
           books.map((book, index) => {
@@ -47,10 +48,10 @@ function App() {
           })}
       </div>
 
-      <ScotchInfoBar seriesNumber="7" />
+
     </div>
   );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+
+
