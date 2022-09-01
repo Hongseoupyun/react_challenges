@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import "./styles.css";
 
@@ -6,10 +7,31 @@ export default function App() {
   const [books, setBooks] = useState(null);
   const apiURL = "https://www.anapioficeandfire.com/api/books?pageSize=30";
 
+  //using fetch
   const fetchData = async function () {
     const data = await (await fetch(apiURL)).json();
     console.log(data);
     setBooks(data);
+  };
+  //using axios
+  const fetchData2 = async () => {
+    try {
+      const data1 = await axios.get(apiURL);
+      setBooks(data1);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  //using axios/promise
+  const fetchData3 = function () {
+    return axios
+      .get(apiURL)
+      .then((res) => {
+        setBooks(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -47,11 +69,6 @@ export default function App() {
             );
           })}
       </div>
-
-
     </div>
   );
 }
-
-
-
