@@ -7,6 +7,7 @@ import FetchData from "./Components/FetchData";
 import ImageCarousal from "./Components/ImageCarousal";
 import IntuitCarousal from "./Components/IntuitCarousal";
 import { Route, Link, Router, Routes } from "react-router-dom";
+import Pagination from "./Components/Pagination";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/6" element={<IntuitCarousal />}>
         {" "}
       </Route>
+      <Route path="7" element={Pagination}></Route>
     </Routes>
   );
 }

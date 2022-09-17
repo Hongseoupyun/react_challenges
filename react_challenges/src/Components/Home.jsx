@@ -9,6 +9,7 @@ function Home() {
       <a href="/4" ><div>FetchData</div></a>
       <a href="/5" ><div>Image Carousal</div></a>
       <a href="/6" ><div>Intuit Carousal</div></a>
+      <a href="/7" ><div>Pagination</div></a>
     </div>
   )
 }
