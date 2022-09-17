@@ -22,6 +22,9 @@ export default function IntuitCarousal() {
       setCurrentPage(currentPage === imgs.length - 1 ? 0 : currentPage + 1);
     }
   };
+  useEffect(() => {
+    console.log("re render");
+  }, []);
 
   return (
     <div>
