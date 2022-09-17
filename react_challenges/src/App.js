@@ -21,7 +21,7 @@ function App() {
       <Route path="/6" element={<IntuitCarousal />}>
         {" "}
       </Route>
-      <Route path="7" element={Pagination}></Route>
+      <Route path="7" element={<Pagination/>}></Route>
     </Routes>
   );
 }
