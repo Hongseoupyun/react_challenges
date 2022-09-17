@@ -26,3 +26,13 @@
   cursor: pointer;
   user-select: none;
 }
+
+.slide{
+  opacity: 0;
+  transition: 1s ease;
+}
+.active{
+  opacity: 1;
+  transition: 1s ease;
+  transform: scale(1.08);
+}
