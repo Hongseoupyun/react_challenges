@@ -8,7 +8,7 @@ function Home() {
       <a href="/3" ><div>Move up Box</div></a>
       <a href="/4" ><div>FetchData</div></a>
       <a href="/5" ><div>Image Carousal</div></a>
-      
+      <a href="/6" ><div>Intuit Carousal</div></a>
     </div>
   )
 }
