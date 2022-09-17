@@ -9,7 +9,6 @@ export default function Moveup() {
   };
   const moveBoxDown = () => {
     setOffsetTop(offsetTop + 5);
-
   }
 
   return (

@@ -5,3 +5,4 @@ export default function ImageCarousal() {
     <div>ImageCarousal</div>
   )
 }
+
