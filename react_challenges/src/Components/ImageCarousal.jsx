@@ -1,7 +1,7 @@
 import React from "react";
 import imgData from "../imgData.json";
 import "./ImageCarousal.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 //WIth animation
 export default function ImageCarousal() {
@@ -15,6 +15,9 @@ export default function ImageCarousal() {
   const prevSlide = function () {
     setCurrentPage(currentPage === 0 ? length - 1 : currentPage - 1);
   };
+  useEffect(() => {
+    console.log("re-render");
+  }, []);
 
   if (!Array.isArray(imgData) || imgData.length === 0) {
     return null;
