@@ -1,13 +1,12 @@
-import './App.css';
-import MoveupBox from './Components/MoveupBox'
-import DynamicSearchFilter from './Components/DynamicSearchFilter';
-import IncrementDecrementButton from './Components/IncrementDecrementButton';
-import Home from './Components/Home';
-import FetchData from './Components/FetchData'
-import ImageCarousal from './Components/ImageCarousal';
-import IntuitCarousal from './Components/IntuitCarousal'
-import { Route, Link, Router, Routes } from 'react-router-dom';
-
+import "./App.css";
+import MoveupBox from "./Components/MoveupBox";
+import DynamicSearchFilter from "./Components/DynamicSearchFilter";
+import IncrementDecrementButton from "./Components/IncrementDecrementButton";
+import Home from "./Components/Home";
+import FetchData from "./Components/FetchData";
+import ImageCarousal from "./Components/ImageCarousal";
+import IntuitCarousal from "./Components/IntuitCarousal";
+import { Route, Link, Router, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -18,7 +17,9 @@ function App() {
       <Route path="/3" element={<MoveupBox />}></Route>
       <Route path="/4" element={<FetchData />}></Route>
       <Route path="/5" element={<ImageCarousal />}></Route>
-      <Route path="/6" element={<IntuitCarousal/>}> </Route>
+      <Route path="/6" element={<IntuitCarousal />}>
+        {" "}
+      </Route>
     </Routes>
   );
 }
