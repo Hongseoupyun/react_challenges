@@ -1,8 +1,9 @@
 import React from "react";
 import imgData from "../imgData.json";
 import "./ImageCarousal.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
+//WIth animation
 export default function ImageCarousal() {
   const [currentPage, setCurrentPage] = useState(0);
   const length = imgData.length;
