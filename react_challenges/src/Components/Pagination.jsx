@@ -16,9 +16,9 @@ export default function Pagination() {
   for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
     pageNumbers.push(i);
   }
-  const paginate = function(pageNumber){
-    setCurrentPage(pageNumber)
-  }
+  const paginate = function (pageNumber) {
+    setCurrentPage(pageNumber);
+  };
 
   useEffect(() => {
     const fetchedPost = async function () {
@@ -57,7 +57,13 @@ export default function Pagination() {
           {pageNumbers.map((pageNumber) => {
             return (
               <li key={pageNumber} className="page-item">
-                <a onClick={()=>{paginate(pageNumber)}} href="#" className="page-link">
+                <a
+                  onClick={() => {
+                    paginate(pageNumber);
+                  }}
+                  href="#"
+                  className="page-link"
+                >
                   {pageNumber}
                 </a>
               </li>
