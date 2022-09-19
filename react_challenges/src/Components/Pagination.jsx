@@ -8,7 +8,7 @@ export default function Pagination() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerpage] = useState(10);
+  const [postPerPage] = useState(10);
   const url = "https://jsonplaceholder.typicode.com/posts";
   //Pagination Logic
   const pageNumbers = [];
