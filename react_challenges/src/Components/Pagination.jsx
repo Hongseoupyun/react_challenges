@@ -10,6 +10,7 @@ export default function Pagination() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage] = useState(10);
   const url = "https://jsonplaceholder.typicode.com/posts";
+
   //Pagination Logic
   const pageNumbers = [];
   const totalPosts = posts.length;
@@ -20,6 +21,11 @@ export default function Pagination() {
     setCurrentPage(pageNumber);
   };
 
+   //Get current posts
+   const indexOfLastPost = currentPage * postPerPage;
+   const indexOfFirstPost = indexOfLastPost - postPerPage;
+   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
+ 
   useEffect(() => {
     const fetchedPost = async function () {
       setLoading(true);
@@ -34,10 +40,6 @@ export default function Pagination() {
     return <h2>Loading...</h2>;
   }
 
-  //Get current posts
-  const indexOfLastPost = currentPage * postPerPage;
-  const indexOfFirstPost = indexOfLastPost - postPerPage;
-  const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   console.log(posts);
   return (
