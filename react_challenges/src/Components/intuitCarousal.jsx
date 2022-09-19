@@ -28,7 +28,7 @@ export default function IntuitCarousal() {
 
   return (
     <div>
-      <img src={imgs[currentPage]} />
+      <img src={imgs[currentPage]} alt="img" />
       <button
         onClick={() => {
           handleClick("previous");
