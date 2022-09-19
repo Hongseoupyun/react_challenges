@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useState } from "react";
+import jsonData from "../MOCK_DATA.json";
 
 export default function Pagination() {
-  return (
-    <div>Pagination</div>
-  )
+
+  const [users,setUsers] = useState(jsonData.slice(0,50))
+
+  return <div>Pagination</div>;
 }
