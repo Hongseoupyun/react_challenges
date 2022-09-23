@@ -21,11 +21,11 @@ export default function Pagination() {
     setCurrentPage(pageNumber);
   };
 
-   //Get current posts
-   const indexOfLastPost = currentPage * postPerPage;
-   const indexOfFirstPost = indexOfLastPost - postPerPage;
-   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
- 
+  //Get current posts
+  const indexOfLastPost = currentPage * postPerPage;
+  const indexOfFirstPost = indexOfLastPost - postPerPage;
+  const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
+
   useEffect(() => {
     const fetchedPost = async function () {
       setLoading(true);
@@ -39,7 +39,6 @@ export default function Pagination() {
   if (loading) {
     return <h2>Loading...</h2>;
   }
-
 
   console.log(posts);
   return (
