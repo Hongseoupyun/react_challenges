@@ -1,17 +1,15 @@
-import React from 'react'
-import { useState } from 'react';
-import JSONDATA from '../MOCK_DATA.json'
-import "./DynamicSearchFilter.css"
+import React from "react";
+import { useState } from "react";
+import JSONDATA from "../MOCK_DATA.json";
+import "./DynamicSearchFilter.css";
 
 function DynamicSearchFilter() {
   const [searchTerm, setSearchTerm] = useState("");
   console.log(searchTerm);
 
   return (
-    <div >
-      <div className='dynamic'>
-
-
+    <div>
+      <div className="dynamic">
         <h1>Search Filter</h1>
         <input
           type="text"
@@ -36,4 +34,4 @@ function DynamicSearchFilter() {
   );
 }
 
-export default DynamicSearchFilter
+export default DynamicSearchFilter;
